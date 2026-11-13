@@ -21,9 +21,9 @@ function Clock(){
         name.innerHTML = "Ali Asgharian ❤️"
         document.querySelector("#dev").style.display = "flex";
         document.querySelector("#devfa").style.display = "none";
-        if (hour > 6 && hour < 12){
+        if (hour >= 6 && hour < 12){
             msg.innerHTML = morning;
-        }else if (hour > 12 && hour < 18){
+        }else if (hour >= 12 && hour < 18){
             msg.innerHTML = afternoon;
         }else {
             msg.innerHTML = Night;
@@ -33,9 +33,9 @@ function Clock(){
         namefa.innerHTML = "❤️علی اصغریان";
         document.querySelector("#dev").style.display = "none";
         document.querySelector("#devfa").style.display = "flex";
-        if (hour > 6 && hour < 12){
+        if (hour >= 6 && hour < 12){
             msg.innerHTML = morningfa;
-        }else if (hour > 12 && hour < 18){
+        }else if (hour >= 12 && hour < 18){
             msg.innerHTML = afternoonfa;
         }else {
             msg.innerHTML = Nightfa;

@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    min-height: 100%;
+}
+body {
+    margin: 0;
+    font-size: 16px;
+    background: linear-gradient(135deg  , silver , darkblue)
+}
+#Lang {
+    padding: 0.75%;
+    background: linear-gradient(135deg , darkcyan , red);
+    color: white;
+    border-radius:25%;
+    text-align: center;
+    font-size: 100%;
+    text-shadow: 0px 0px 10px green,
+                 0px 0px 20px green, 
+                 0px 0px 40px green;
+}
+.Langd {
+    text-align: center;
+    margin: 1.5em;
+}
+#Clock {
+    background: linear-gradient(135deg , black , #333 , #666);
+    border-radius: 50%;
+    display:inline-block;
+    width: 10em;
+    text-align: center;
+    padding: 2%;
+    height: 10em;
+    border: 3px solid black;
+    margin: 1.20em 45%;
+    box-shadow: 0px 0px 10px tan,
+                0px 0px 20px tan,
+                0px 0px 40px tan;
+}
+#time {
+    font-size: 1.5em;
+    margin: 33% 2%;
+    color: yellow;
+    font-family: sans-serif;
+    text-shadow: 0px 0px 10px greenyellow,
+                 0px 0px 20px greenyellow, 
+                 0px 0px 40px greenyellow;
+}
+#msg {
+    text-align:center;
+    margin: 1.1em;
+    font-family: sans-serif;
+    color: white;
+    font-size:2em;
+    animation: spina 2.5s ease infinite;
+    text-shadow: 0px 0px 10px aqua,
+                 0px 0px 20px aqua, 
+                 0px 0px 40px aqua;
+}
+@keyframes spina {
+    100%{
+        transform: rotateX(360deg);
+    }
+}
+#dev , #devfa{
+    display: flex;
+    justify-content: center;
+    gap:30%;
+}
+#tav , #tavfa{
+    color: white;
+    font-size:1.5em;
+    font-family: sans-serif;
+    animation: spins 5s ease infinite;
+    text-shadow: 0px 0px 10px orange,
+                 0px 0px 20px orange,
+                 0px 0px 40px orange;
+}
+#name , #namefa{
+    color: white;
+    font-family: sans-serif;
+    font-size:1.5em;
+    animation: spins 5s ease infinite;
+    text-shadow: 0px 0px 10px gold,
+                 0px 0px 20px gold,
+                 0px 0px 40px gold;
+}
+@keyframes spins {
+    100%{
+        transform: rotateY(360deg);
+    }
+}
+
+@media screen and (max-width:900px){
+    #Clock {
+        margin: 1.25em 42.1%;
+        padding: 2%;
+    }
+    #time {
+    margin: 35% 2%;
+    }
+}
+@media screen and (max-width:600px){
+    #Clock {
+        margin: 1.25em 35.7%;
+        padding: 2%;
+    }
+    #tav , #tavfa , #name , #namefa {
+        font-size: 1.10em;
+    }
+    #time {
+    margin: 37% 2%;
+    }
+}
